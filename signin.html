@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Username: <input type="password" id="myUsr" >
+
+Password: <input type="password" id="myPsw">
+
+
+<p>Click the button to get the password of the password field.</p>
+
+<button onclick="myFunction()">Submit</button>
+   
+        
+
+<p id="InputUsr"></p>
+<p id="InputPsw"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myUsr").value;
+  document.getElementById("InputUsr").value = x;
+  var y= document.getElementById("myPsw").value;
+  document.getElementById("InputPsw").value = y;
+ if (x=="username" && y=="password") {
+      window.location.href = "Project.html";
+    }
+}
+</script>
+
+</body>
+</html>
